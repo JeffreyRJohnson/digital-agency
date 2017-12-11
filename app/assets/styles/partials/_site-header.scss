@@ -1,0 +1,83 @@
+.primary-nav {
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  animation: 1s fadein 0.5s forwards;
+  @include atMedium {
+    padding: 35px 100px 0;
+  }
+}
+
+.primary-nav__logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  text-decoration: none;
+  font-size: 2.4em;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  @include atMedium {
+    top: 0px;
+    left: 0px;
+    position: relative;
+  }
+}
+
+.primary-nav__burger {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  display: inline-block;
+  color: $orange;
+  font-size: 2.4em;
+  &:hover {
+    cursor: pointer;
+  }
+  @include atMedium {
+    display: none;
+  }
+}
+
+.primary-nav__row {
+  display: none;
+  background: $orange;
+  width: 100%;
+  margin-top: 70px;
+  @include atMedium {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-right: 0px;
+  }
+}
+
+.primary-nav__row--open {
+  display: block;
+  padding: 4px 0;
+}
+
+.primary-nav__link {
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #fff;
+  padding-bottom: 10px;
+  &:hover {
+    color: black;
+  }
+}
+
+.primary-nav__list {
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1.4em;
+  @include atMedium {
+    display: inline-block;
+    padding: 0 0.4rem;
+  }
+}

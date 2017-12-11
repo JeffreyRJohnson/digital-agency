@@ -1,0 +1,78 @@
+.large-hero-image {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  @include atMedium {
+    min-height: 100vh;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    background-size: cover;
+    z-index: -1;
+    @include atMedium {
+      height: 100%;
+    }
+  }
+  &__title {
+    font-size: 2.2em;
+    font-weight: 100;
+    top: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: $grey;
+    line-height: 1;
+    @include atMedium {
+      font: 60px 'arial', serif;
+    }
+    &--bright {
+      color: $orange;
+      font-weight: 700;
+    }
+  }
+  &__sub-title {
+    color: #fff;
+    font-weight: 100;
+    position: absolute;
+    font-size: 1.1em;
+    top: 200px;
+    left: 20px;
+    right: 20px;
+    color: $grey;
+    width: 85%;
+    &--bold {
+      font-weight: 700;
+    }
+  }
+  &__btn {
+    text-align: center;
+    opacity: 1;
+    color: #fff;
+    font-weight: 100;
+    position: absolute;
+    bottom: 360px;
+  }
+  &__content-area {
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+  }
+}
+
+.large-hero-image .fa-stack {
+  position: absolute;
+  bottom: -76px;
+  font-size: 0.9em;
+  color: $grey;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+  }
+}
