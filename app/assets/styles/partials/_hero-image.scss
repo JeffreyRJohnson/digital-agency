@@ -55,7 +55,8 @@
     color: #fff;
     font-weight: 100;
     position: absolute;
-    bottom: 360px;
+    bottom: 400px;
+    cursor: pointer;
   }
   &__content-area {
     opacity: 0;
@@ -64,15 +65,20 @@
   }
 }
 
-.large-hero-image .fa-stack {
-  position: absolute;
-  bottom: -76px;
-  font-size: 0.9em;
-  color: $grey;
-}
-
 @keyframes slidefade {
   100% {
     opacity: 1;
   }
+}
+
+.large-hero-image__icon {
+  border: 3px solid $grey;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: $grey;
+  text-align: center;
+  padding: 15px;
+  font-size: 1em;
+  margin-top: 230px;
 }

@@ -1,20 +1,39 @@
-.contact {
-  &__header {
-    font-size: 2.2em;
-    font-weight: 100;
-    text-align: center;
-    &--bold {
-      font-weight: 600;
-    }
-    &--sub-header {
-      font-style: italic;
-      margin: 30px;
-      font-size: 1.1em;
-    }
+.contact__form {
+  width: 85%;
+  padding: 1em;
+  &__label {
+    display: inline-block;
+    width: 160px;
+    text-align: left;
+    margin: 12px 0;
+    color: $darkgrey;
+    font-size: 0.9em;
   }
-  &__filter__header {
-    font-weight: 700;
-    font-size: 1.1em;
-    text-align: center;
+  &__input {
+    font: 1em sans-serif;
+    width: 280px;
+    box-sizing: border-box;
+    height: 50px;
+  }
+  &__textarea {
+    font: 1em sans-serif;
+    vertical-align: top;
+    width: 280px;
+    box-sizing: border-box;
+    height: 140px;
+  }
+  &__button {
+    border: none;
+    background: $orange;
+    padding: 0.8em 1em;
+    color: white;
+    cursor: pointer;
+    margin: 20px 0;
+    display: block;
+    font-size: 0.9em;
+    text-align: right;
+    &:hover {
+      background-color: $darkgrey;
+    }
   }
 }

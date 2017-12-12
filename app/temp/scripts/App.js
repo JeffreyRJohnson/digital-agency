@@ -10384,7 +10384,7 @@ var MobileMenu = function () {
     key: 'events',
     value: function events() {
       this.menuIcon.click(this.toggleTheMenu.bind(this));
-      this.aboutLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)('#about'), 3));
+      this.aboutLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)('#about'), 2.5));
       this.servicesLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)('#services'), 3));
       this.portfolioLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)('#portfolio'), 1100));
       this.testimonialsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)('#testimonials'), 2.8));

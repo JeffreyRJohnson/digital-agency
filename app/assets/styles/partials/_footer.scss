@@ -1,0 +1,18 @@
+.footer {
+  text-align: center;
+  background: $darkgrey;
+  &__copyright {
+    color: $grey;
+    padding-top: 40px;
+  }
+  &__icon {
+    border: 3px solid $grey;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: $grey;
+    padding: 5px;
+    font-size: 1em;
+    margin: 25px 0;
+  }
+}

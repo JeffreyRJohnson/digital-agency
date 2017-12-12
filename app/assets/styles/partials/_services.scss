@@ -1,17 +1,4 @@
 .services {
-  margin-top: -60px;
-  &__header {
-    font-size: 2.2em;
-    font-weight: 100;
-    &--bold {
-      font-weight: 600;
-    }
-    &--sub-header {
-      font-style: italic;
-      margin: 30px;
-      font-size: 1.1em;
-    }
-  }
   &__card {
     text-align: center;
     &__heading {
@@ -19,18 +6,16 @@
       font-weight: 500;
       margin-bottom: 10px;
     }
+    &__icon {
+      border: 6px solid $orange;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      color: black;
+      text-align: center;
+      padding: 20px;
+      font-size: 4em;
+      margin: 20px 0;
+    }
   }
-}
-
-.services__icon {
-  border: 6px solid $orange;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  color: black;
-  text-align: center;
-  padding: 20px;
-  font-size: 4em;
-  margin: 20px 0;
-  /* width and height can be anything, as long as they're equal */
 }
