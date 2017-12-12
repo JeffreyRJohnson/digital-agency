@@ -399,13 +399,69 @@ hr {
   background-position: bottom;
   height: 350px;
   width: 120%; }
+  .clients__list {
+    color: #c3c3c3;
+    font-size: 1em;
+    margin-top: 50px;
+    margin-bottom: 20px; }
+
+#chanel {
+  font-weight: 700;
+  margin: 0 6px; }
+
+#zara {
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  margin: 0 6px; }
+
+#guerlain {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 6px; }
+
+#lancome {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  margin: 0 6px; }
+
+#lacoste {
+  font-weight: 700;
+  margin: 0 6px; }
+
+#ralphlauren {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 6px; }
+
+#dkny {
+  font-weight: 900;
+  margin: 0 6px; }
+
+#armani {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  margin: 0 6px; }
+
+#versace {
+  letter-spacing: 0.1em;
+  margin: 0 6px; }
 
 .testimonials {
-  background-image: url(/../assets/images/city2.jpeg);
+  background-image: url(/../assets/images/moon.jpg);
   background-size: cover;
   background-position: bottom;
   height: 370px;
   width: 120%; }
+  .testimonials__quote {
+    color: white;
+    font-size: 1.1em;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 500; }
+    .testimonials__quote--author {
+      color: #c3c3c3;
+      font-weight: 700; }
+    .testimonials__quote--company {
+      color: grey;
+      font-weight: 400; }
 
 /*
  *  Owl Carousel - Core

@@ -1,7 +1,22 @@
 .testimonials {
-  background-image: url(/../assets/images/city2.jpeg);
+  background-image: url(/../assets/images/moon.jpg);
   background-size: cover;
   background-position: bottom;
   height: 370px;
   width: 120%;
+  &__quote {
+    color: white;
+    font-size: 1.1em;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 500;
+    &--author {
+      color: $grey;
+      font-weight: 700;
+    }
+    &--company {
+      color: grey;
+      font-weight: 400;
+    }
+  }
 }

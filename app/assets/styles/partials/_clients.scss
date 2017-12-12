@@ -4,4 +4,58 @@
   background-position: bottom;
   height: 350px;
   width: 120%;
+  &__list {
+    color: $grey;
+    font-size: 1em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+#chanel {
+  font-weight: 700;
+  margin: 0 6px;
+}
+
+#zara {
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  margin: 0 6px;
+}
+
+#guerlain {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 6px;
+}
+
+#lancome {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  margin: 0 6px;
+}
+
+#lacoste {
+  font-weight: 700;
+  margin: 0 6px;
+}
+
+#ralphlauren {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 6px;
+}
+
+#dkny {
+  font-weight: 900;
+  margin: 0 6px;
+}
+
+#armani {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  margin: 0 6px;
+}
+
+#versace {
+  letter-spacing: 0.1em;
+  margin: 0 6px;
 }
