@@ -202,6 +202,10 @@ a {
     .large-hero-image__icon {
       margin-top: 30%; } }
 
+@media (min-width: 768px) {
+  .about {
+    margin: 40px; } }
+
 @media (min-width: 1010px) {
   .about {
     width: 38%;
@@ -216,7 +220,9 @@ a {
   @media (min-width: 481px) {
     .about__image {
       height: 300px;
-      margin-top: 140px; } }
+      margin-top: 180px;
+      padding-left: 40px;
+      padding-right: 40px; } }
   @media (min-width: 768px) {
     .about__image {
       margin-top: 90px;
@@ -263,6 +269,9 @@ a {
 
 .contact__form {
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .contact__form {
+      margin: 0 40px; } }
   @media (min-width: 1010px) {
     .contact__form {
       margin: 0 10%; } }
@@ -279,12 +288,14 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 50px; }
-  .contact__form__name-container {
-    width: 48%;
-    float: left; }
-  .contact__form__email-container {
-    width: 48%;
-    float: right; }
+  @media (min-width: 1010px) {
+    .contact__form__name-container {
+      width: 48%;
+      float: left; } }
+  @media (min-width: 1010px) {
+    .contact__form__email-container {
+      width: 48%;
+      float: right; } }
   .contact__form__textarea {
     font: 1em sans-serif;
     vertical-align: top;
@@ -354,14 +365,11 @@ a {
   border-radius: 50%;
   width: 50px; }
 
-@media (min-width: 1010px) {
-  #team-carousel {
-    width: 80%; } }
+#team-carousel {
+  width: 80%;
+  margin: 0 auto; }
 
 @media (min-width: 600px) {
-  .owl-carousel {
-    width: 90%;
-    margin: 0 auto; }
   .team {
     height: 740px; }
   .h3tag {
@@ -379,6 +387,9 @@ a {
 
 .services {
   text-align: center; }
+  @media (min-width: 768px) {
+    .services {
+      margin: 0 40px; } }
   @media (min-width: 1010px) {
     .services__card {
       -webkit-box-flex: 1;
@@ -491,8 +502,7 @@ section {
   .clients__list {
     color: #c3c3c3;
     font-size: 1em;
-    margin-top: 70px;
-    margin-bottom: 20px; }
+    margin-top: 60px; }
     @media (min-width: 481px) {
       .clients__list {
         font-size: 1.4em;
@@ -561,8 +571,8 @@ section {
     @media (min-width: 768px) {
       .testimonials__quote {
         font-size: 2em;
-        margin-top: 20px;
-        margin-bottom: 20px; } }
+        width: 90%;
+        margin: 20px auto; } }
     .testimonials__quote--author {
       color: #c3c3c3;
       font-weight: 700; }

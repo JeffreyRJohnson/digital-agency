@@ -16,8 +16,8 @@
     }
     @include atMedium {
       font-size: 2em;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      width: 90%;
+      margin: 20px auto;
     }
     &--author {
       color: $grey;

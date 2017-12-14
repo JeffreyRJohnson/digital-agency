@@ -1,5 +1,8 @@
 .services {
   text-align: center;
+  @include atMedium {
+    margin: 0 40px;
+  }
   &__card {
     @include atLarge {
       flex: 1;

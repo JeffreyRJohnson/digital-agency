@@ -53,16 +53,11 @@
 }
 
 #team-carousel {
-  @include atLarge {
-    width: 80%;
-  }
+  width: 80%;
+  margin: 0 auto;
 }
 
 @media (min-width: 600px) {
-  .owl-carousel {
-    width: 90%;
-    margin: 0 auto;
-  }
   .team {
     height: 740px;
   }

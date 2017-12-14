@@ -1,4 +1,7 @@
 .contact__form {
+  @include atMedium {
+    margin: 0 40px;
+  }
   @include atLarge {
     margin: 0 10%;
   }
@@ -18,12 +21,16 @@
     height: 50px;
   }
   &__name-container {
-    width: 48%;
-    float: left;
+    @include atLarge {
+      width: 48%;
+      float: left;
+    }
   }
   &__email-container {
-    width: 48%;
-    float: right;
+    @include atLarge {
+      width: 48%;
+      float: right;
+    }
   }
   &__textarea {
     font: 1em sans-serif;
