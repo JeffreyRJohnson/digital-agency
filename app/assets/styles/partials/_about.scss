@@ -1,9 +1,28 @@
 .about {
+  @include atLarge {
+    width: 38%;
+    float: right;
+    margin: 40px 10% 0 2%;
+  }
   &__image {
-    margin-top: 40px;
+    margin-top: 60px;
     height: 200px;
     width: 100%;
     border-radius: 10px;
+    @include atSmall {
+      height: 300px;
+      margin-top: 140px;
+    }
+    @include atMedium {
+      margin-top: 90px;
+      height: 400px;
+      margin-bottom: 40px;
+    }
+    @include atLarge {
+      width: 38%;
+      margin: 80px 2% 60px 10%;
+      height: 440px;
+    }
   }
 
   &__paragraph {
@@ -11,7 +30,6 @@
     margin: 20px 0 20px 0;
     font-weight: 500;
     font-size: 1em;
-    width: 98%;
   }
 
   &__browse-btn {

@@ -1,6 +1,17 @@
 .services {
+  text-align: center;
   &__card {
-    text-align: center;
+    @include atLarge {
+      flex: 1;
+    }
+    &__container {
+      @include atLarge {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 10%;
+      }
+    }
     &__heading {
       font-size: 2em;
       font-weight: 500;

@@ -10421,7 +10421,7 @@ exports.default = MobileMenu;
 __webpack_require__(4);
 
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
+  $('#client-carousel').owlCarousel({
     loop: false,
     margin: 14,
     responsiveClass: true,
@@ -10433,13 +10433,52 @@ $(document).ready(function () {
         items: 1,
         nav: false
       },
-      600: {
-        items: 2,
+      400: {
+        items: 1,
         nav: false
       }
     }
   });
 }); // import $ from 'jquery';
+
+
+$(document).ready(function () {
+  $('#team-carousel').owlCarousel({
+    loop: false,
+    margin: 14,
+    responsiveClass: true,
+    autoplay: false,
+    autoplayTimeout: 0,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2,
+        nav: false
+      },
+      768: {
+        items: 4,
+        nav: false
+      }
+    }
+  });
+});
+
+$(document).ready(function () {
+  $('#testimonials-carousel').owlCarousel({
+    loop: false,
+    margin: 14,
+    responsiveClass: true,
+    autoplay: false,
+    autoplayTimeout: 0,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      }
+    }
+  });
+});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),

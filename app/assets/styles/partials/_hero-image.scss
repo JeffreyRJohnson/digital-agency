@@ -3,6 +3,7 @@
   justify-content: center;
   text-align: center;
   color: #fff;
+  height: 380px;
   @include atMedium {
     min-height: 100vh;
   }
@@ -14,6 +15,9 @@
     height: 380px;
     background-size: cover;
     z-index: -1;
+    @include atSmall {
+      height: 500px;
+    }
     @include atMedium {
       height: 100%;
     }
@@ -21,14 +25,12 @@
   &__title {
     font-size: 2.2em;
     font-weight: 100;
-    top: 120px;
-    position: absolute;
-    left: 0;
-    right: 0;
     color: $grey;
     line-height: 1;
-    @include atMedium {
-      font: 60px 'arial', serif;
+    margin-top: 20px;
+    @include atSmall {
+      font-size: 3.8em;
+      top: 160px;
     }
     &--bright {
       color: $orange;
@@ -38,26 +40,23 @@
   &__sub-title {
     color: #fff;
     font-weight: 100;
-    position: absolute;
     font-size: 1.1em;
-    top: 200px;
-    left: 20px;
-    right: 20px;
     color: $grey;
-    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    width: 93%;
+    @include atSmall {
+      top: 220px;
+      left: 40px;
+      right: 40px;
+      font-size: 1.5em;
+      font-weight: 400;
+    }
     &--bold {
       font-weight: 700;
     }
   }
-  &__btn {
-    text-align: center;
-    opacity: 1;
-    color: #fff;
-    font-weight: 100;
-    position: absolute;
-    bottom: 400px;
-    cursor: pointer;
-  }
+
   &__content-area {
     opacity: 0;
     margin-top: 100px;
@@ -80,5 +79,11 @@
   text-align: center;
   padding: 15px;
   font-size: 1em;
-  margin-top: 230px;
+  margin-top: 60px;
+  @include atMedium {
+    margin-top: 60%;
+  }
+  @include atLarge {
+    margin-top: 30%;
+  }
 }

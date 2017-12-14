@@ -1,9 +1,22 @@
 .footer {
   text-align: center;
-  background: $darkgrey;
+  background-color: $darkgrey;
+  height: 140px;
+  @include atMedium {
+    height: 100px;
+  }
+
   &__copyright {
     color: $grey;
-    padding-top: 40px;
+    padding-top: 30px;
+    @include atMedium {
+      float: left;
+      padding-top: 45px;
+      padding-left: 40px;
+    }
+    @include atLarge {
+      padding-left: 10%;
+    }
   }
   &__icon {
     border: 3px solid $grey;
@@ -13,6 +26,22 @@
     color: $grey;
     padding: 5px;
     font-size: 1em;
-    margin: 25px 0;
+    margin: 20px 2px 10px 0;
+    &:hover {
+      color: $orange;
+      border: 3px solid $orange;
+    }
+    @include atMedium {
+      float: right;
+      margin: 40px 8px 0 0;
+    }
+    &__container {
+      @include atSmall {
+        margin-right: 40px;
+      }
+      @include atLarge {
+        margin-right: 10%;
+      }
+    }
   }
 }

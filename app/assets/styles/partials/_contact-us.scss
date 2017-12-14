@@ -1,6 +1,8 @@
 .contact__form {
-  width: 85%;
-  padding: 1em;
+  @include atLarge {
+    margin: 0 10%;
+  }
+  margin: 0 auto;
   &__label {
     display: inline-block;
     width: 160px;
@@ -11,14 +13,22 @@
   }
   &__input {
     font: 1em sans-serif;
-    width: 280px;
+    width: 100%;
     box-sizing: border-box;
     height: 50px;
+  }
+  &__name-container {
+    width: 48%;
+    float: left;
+  }
+  &__email-container {
+    width: 48%;
+    float: right;
   }
   &__textarea {
     font: 1em sans-serif;
     vertical-align: top;
-    width: 280px;
+    width: 100%;
     box-sizing: border-box;
     height: 140px;
   }
@@ -34,6 +44,9 @@
     text-align: right;
     &:hover {
       background-color: $darkgrey;
+    }
+    @include atMedium {
+      margin: 40px 0;
     }
   }
 }

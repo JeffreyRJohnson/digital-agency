@@ -1,12 +1,11 @@
 .card {
   display: inline-block;
-  width: 44%;
   color: white;
   text-align: center;
 }
 
 .h4tag {
-  margin: 10px 0;
+  margin: 6px 0;
   font-size: 1.4em;
   font-weight: 500;
   text-align: center;
@@ -27,12 +26,19 @@
   background-size: cover;
   background-position: bottom;
   height: 480px;
+  @include atLarge {
+    margin-top: 60px;
+  }
 }
 
 .owl-carousel {
   padding-top: 40px;
   width: 85%;
   text-align: center;
+  @include atLarge {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .owl-carousel .owl-item img {
@@ -44,6 +50,12 @@
 .five {
   border-radius: 50%;
   width: 50px;
+}
+
+#team-carousel {
+  @include atLarge {
+    width: 80%;
+  }
 }
 
 @media (min-width: 600px) {
