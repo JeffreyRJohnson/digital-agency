@@ -36,18 +36,14 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 
 gulp.task('optimizeImages', ['deleteDistFolder'], function() {
   return gulp
-    .src([
-      './app/assets/images/**/*',
-      '!./app/assets/images/icons',
-      '!./app/assets/images/icons/**/*'
-    ])
+    .src(['./app/assets/images/**/*'])
     .pipe(
       imagemin({
         progressive: true,
         interlaced: true,
         multipass: true
       })
-    )
+  )
     .pipe(gulp.dest('./docs/assets/images'));
 });
 
@@ -77,7 +73,7 @@ gulp.task('usemin', ['styles', 'scripts'], function() {
           }
         ]
       })
-    )
+  )
     .pipe(gulp.dest('./docs'));
 });
 
