@@ -10422,10 +10422,10 @@ __webpack_require__(4);
 
 $(document).ready(function () {
   $('#client-carousel').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 14,
     responsiveClass: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 0,
     autoplayHoverPause: true,
     responsive: {
@@ -10444,10 +10444,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('#team-carousel').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 14,
     responsiveClass: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 0,
     autoplayHoverPause: true,
     responsive: {
@@ -10465,10 +10465,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('#testimonials-carousel').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 14,
     responsiveClass: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 0,
     autoplayHoverPause: true,
     responsive: {
