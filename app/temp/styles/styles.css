@@ -490,6 +490,25 @@ section {
   font-size: 1.1em;
   text-align: center; }
 
+.portfolio__album__thumb {
+  display: inline-block; }
+
+.portfolio__album__wrapper {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.portfolio__filter__header {
+  display: inline-block;
+  margin-left: 400px; }
+
+.portfolio__filter__filter {
+  display: inline-block;
+  margin-left: 500px; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto 100px auto; }
+
 .clients {
   background-image: url(../../assets/images/city.jpeg);
   background-size: cover;
@@ -859,4 +878,4 @@ section {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #d6d6d6; }
+  background: #fcac45; }

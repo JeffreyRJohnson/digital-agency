@@ -1,5 +1,6 @@
 // import $ from 'jquery';
-import '../../../temp/scripts/owl.carousel.js';
+// import '../../../temp/scripts/owl.carousel.js';
+import owlCarousel from 'owl.carousel';
 
 $(document).ready(function() {
   $('#client-carousel').owlCarousel({
@@ -7,7 +8,7 @@ $(document).ready(function() {
     margin: 14,
     responsiveClass: true,
     autoplay: true,
-    autoplayTimeout: 0,
+    autoplayTimeout: 5000,
     autoplayHoverPause: true,
     responsive: {
       0: {
@@ -28,7 +29,7 @@ $(document).ready(function() {
     margin: 14,
     responsiveClass: true,
     autoplay: true,
-    autoplayTimeout: 0,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsive: {
       0: {
@@ -49,7 +50,7 @@ $(document).ready(function() {
     margin: 14,
     responsiveClass: true,
     autoplay: true,
-    autoplayTimeout: 0,
+    autoplayTimeout: 5000,
     autoplayHoverPause: true,
     responsive: {
       0: {
