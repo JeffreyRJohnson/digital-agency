@@ -339,7 +339,7 @@ a {
   font-size: 1em; }
 
 .team {
-  background-image: url(/../assets/images/mountain.jpeg);
+  background-image: url(../../assets/images/mountain.jpeg);
   background-size: cover;
   background-position: bottom;
   height: 480px; }
@@ -491,7 +491,7 @@ section {
   text-align: center; }
 
 .clients {
-  background-image: url(/../assets/images/city.jpeg);
+  background-image: url(../../assets/images/city.jpeg);
   background-size: cover;
   background-position: bottom;
   height: 350px;
@@ -553,7 +553,7 @@ section {
   margin: 0 6px; }
 
 .testimonials {
-  background-image: url(/../assets/images/moon.jpg);
+  background-image: url(../../assets/images/moon.jpg);
   background-size: cover;
   background-position: bottom;
   height: 370px;
