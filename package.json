@@ -13,6 +13,7 @@
     "jquery-validation": "^1.17.0",
     "lazysizes": "4.0.0-rc3",
     "normalize.css": "7.0.0",
+    "owl.carousel": "^2.2.0",
     "picturefill": "3.0.2"
   },
   "devDependencies": {
