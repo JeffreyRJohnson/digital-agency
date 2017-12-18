@@ -5,7 +5,7 @@ import owlCarousel from 'owl.carousel';
 $(document).ready(function() {
   $('#client-carousel').owlCarousel({
     loop: true,
-    margin: 14,
+    margin: 10,
     responsiveClass: true,
     autoplay: true,
     autoplayTimeout: 5000,

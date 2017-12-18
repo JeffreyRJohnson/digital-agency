@@ -9,11 +9,11 @@
   }
   &__list {
     color: $grey;
-    font-size: 1em;
+    font-size: 0.9em;
     margin-top: 60px;
     @include atSmall {
       font-size: 1.4em;
-      margin-top: 40px;
+      margin-top: 80px;
     }
     @include atMedium {
       font-size: 2.2em;
@@ -25,48 +25,48 @@
 
 #chanel {
   font-weight: 700;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
 #zara {
   letter-spacing: 0.3em;
   font-weight: 500;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
 #guerlain {
   font-family: 'Times New Roman', Times, serif;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
 #lancome {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
 #lacoste {
   font-weight: 700;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
 #ralphlauren {
   font-family: 'Times New Roman', Times, serif;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
 #dkny {
   font-weight: 900;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
 #armani {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
 #versace {
   letter-spacing: 0.1em;
-  margin: 0 6px;
+  margin: 0 5px;
 }

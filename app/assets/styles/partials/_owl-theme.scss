@@ -57,3 +57,13 @@
 .owl-theme .owl-dots .owl-dot:hover span {
   background: $orange;
 }
+
+.owl-carousel .owl-item img {
+  width: 80px !important;
+  height: 80px !important;
+  margin: 0 auto;
+  @include atSmall {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}

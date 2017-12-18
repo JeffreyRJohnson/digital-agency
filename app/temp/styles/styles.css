@@ -213,7 +213,8 @@ a {
     margin: 40px 10% 0 2%; } }
 
 .about__image {
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   height: 200px;
   width: 100%;
   border-radius: 10px; }
@@ -282,6 +283,11 @@ a {
     margin: 12px 0;
     color: #5a5a5a;
     font-size: 0.9em; }
+    .contact__form__label::after {
+      content: '*';
+      display: inline-block;
+      color: red;
+      margin-left: 4px; }
   .contact__form__input {
     font: 1em sans-serif;
     width: 100%;
@@ -319,71 +325,71 @@ a {
       .contact__form__button {
         margin: 40px 0; } }
 
-.card {
-  display: inline-block;
-  color: white;
-  text-align: center; }
+#page_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60); }
 
-.h4tag {
-  margin: 6px 0;
-  font-size: 1.4em;
-  font-weight: 500;
-  text-align: center; }
-
-.h5tag {
-  font-size: 1em;
-  font-weight: 400;
-  margin: 10px 0; }
-
-.ptag {
-  font-size: 1em; }
+#successmsgdiv {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  width: 760px;
+  height: 500px;
+  left: 50%;
+  margin-left: -380px;
+  top: 50%;
+  margin-top: -250px;
+  background-color: #ffff00;
+  border: 1px solid #ff0000; }
 
 .team {
   background-image: url(../../assets/images/mountain.jpeg);
   background-size: cover;
   background-position: bottom;
   height: 480px; }
+  @media (min-width: 481px) {
+    .team {
+      height: 740px; } }
   @media (min-width: 1010px) {
     .team {
       margin-top: 60px; } }
-
-.owl-carousel {
-  padding-top: 40px;
-  width: 85%;
-  text-align: center; }
-  @media (min-width: 1010px) {
-    .owl-carousel {
-      width: 80%;
-      margin: 0 auto; } }
-
-.owl-carousel .owl-item img {
-  width: 80px !important;
-  height: 80px !important;
-  margin: 0 auto; }
-
-.five {
-  border-radius: 50%;
-  width: 50px; }
+  .team__card {
+    display: inline-block;
+    color: white;
+    text-align: center; }
+    .team__card__image {
+      border-radius: 50%;
+      width: 50px; }
+    .team__card__name {
+      margin: 6px 0;
+      font-size: 1.4em;
+      font-weight: 500;
+      text-align: center; }
+    .team__card__position {
+      font-size: 1em;
+      font-weight: 400;
+      margin: 10px 0; }
+      @media (min-width: 481px) {
+        .team__card__position {
+          font-size: 1.6em; } }
+    .team__card__text {
+      font-size: 1em; }
+      @media (min-width: 481px) {
+        .team__card__text {
+          margin-top: 20px;
+          margin-bottom: 70px;
+          font-size: 1.2em; } }
 
 #team-carousel {
   width: 80%;
   margin: 0 auto; }
-
-@media (min-width: 600px) {
-  .team {
-    height: 740px; }
-  .h3tag {
-    padding-top: 70px;
-    font-size: 3.5em; }
-  .lineone {
-    margin-top: 10px; }
-  .owl-carousel .owl-item img {
-    width: 120px !important;
-    height: 120px !important; }
-  .ptag {
-    margin-top: 40px;
-    margin-bottom: 70px;
-    font-size: 1.2em; } }
 
 .services {
   text-align: center; }
@@ -420,6 +426,9 @@ a {
     padding: 20px;
     font-size: 4em;
     margin: 20px 0; }
+  .services__card__paragraph {
+    margin-left: 40px;
+    margin-right: 40px; }
 
 section {
   display: -webkit-box;
@@ -520,12 +529,12 @@ section {
       height: 440px; } }
   .clients__list {
     color: #c3c3c3;
-    font-size: 1em;
+    font-size: 0.9em;
     margin-top: 60px; }
     @media (min-width: 481px) {
       .clients__list {
         font-size: 1.4em;
-        margin-top: 40px; } }
+        margin-top: 80px; } }
     @media (min-width: 768px) {
       .clients__list {
         font-size: 2.2em;
@@ -534,42 +543,42 @@ section {
 
 #chanel {
   font-weight: 700;
-  margin: 0 6px; }
+  margin: 0 5px; }
 
 #zara {
   letter-spacing: 0.3em;
   font-weight: 500;
-  margin: 0 6px; }
+  margin: 0 5px; }
 
 #guerlain {
   font-family: 'Times New Roman', Times, serif;
-  margin: 0 6px; }
+  margin: 0 5px; }
 
 #lancome {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
-  margin: 0 6px; }
+  margin: 0 5px; }
 
 #lacoste {
   font-weight: 700;
-  margin: 0 6px; }
+  margin: 0 5px; }
 
 #ralphlauren {
   font-family: 'Times New Roman', Times, serif;
-  margin: 0 6px; }
+  margin: 0 5px; }
 
 #dkny {
   font-weight: 900;
-  margin: 0 6px; }
+  margin: 0 5px; }
 
 #armani {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
-  margin: 0 6px; }
+  margin: 0 5px; }
 
 #versace {
   letter-spacing: 0.1em;
-  margin: 0 6px; }
+  margin: 0 5px; }
 
 .testimonials {
   background-image: url(../../assets/images/moon.jpg);
@@ -604,18 +613,24 @@ section {
  */
 .owl-carousel {
   display: none;
-  width: 100%;
+  padding-top: 40px;
+  width: 85%;
+  text-align: center;
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1; }
+  @media (min-width: 1010px) {
+    .owl-carousel {
+      width: 80%;
+      margin: 0 auto; } }
   .owl-carousel .owl-stage {
     position: relative;
     -ms-touch-action: pan-Y;
     -moz-backface-visibility: hidden;
     /* fix firefox animation glitch */ }
   .owl-carousel .owl-stage:after {
-    content: ".";
+    content: '.';
     display: block;
     clear: both;
     visibility: hidden;
@@ -879,3 +894,12 @@ section {
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #fcac45; }
+
+.owl-carousel .owl-item img {
+  width: 80px !important;
+  height: 80px !important;
+  margin: 0 auto; }
+  @media (min-width: 481px) {
+    .owl-carousel .owl-item img {
+      width: 120px !important;
+      height: 120px !important; } }

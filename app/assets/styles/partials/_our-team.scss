@@ -1,80 +1,48 @@
-.card {
-  display: inline-block;
-  color: white;
-  text-align: center;
-}
-
-.h4tag {
-  margin: 6px 0;
-  font-size: 1.4em;
-  font-weight: 500;
-  text-align: center;
-}
-
-.h5tag {
-  font-size: 1em;
-  font-weight: 400;
-  margin: 10px 0;
-}
-
-.ptag {
-  font-size: 1em;
-}
-
 .team {
   background-image: url(../../assets/images/mountain.jpeg);
   background-size: cover;
   background-position: bottom;
   height: 480px;
+  @include atSmall {
+    height: 740px;
+  }
   @include atLarge {
     margin-top: 60px;
   }
-}
-
-.owl-carousel {
-  padding-top: 40px;
-  width: 85%;
-  text-align: center;
-  @include atLarge {
-    width: 80%;
-    margin: 0 auto;
+  &__card {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    &__image {
+      border-radius: 50%;
+      width: 50px;
+    }
+    &__name {
+      margin: 6px 0;
+      font-size: 1.4em;
+      font-weight: 500;
+      text-align: center;
+    }
+    &__position {
+      font-size: 1em;
+      font-weight: 400;
+      margin: 10px 0;
+      @include atSmall {
+        font-size: 1.6em;
+      }
+    }
+    &__text {
+      font-size: 1em;
+      @include atSmall {
+        margin-top: 20px;
+        margin-bottom: 70px;
+        font-size: 1.2em;
+      }
+    }
   }
-}
-
-.owl-carousel .owl-item img {
-  width: 80px !important;
-  height: 80px !important;
-  margin: 0 auto;
-}
-
-.five {
-  border-radius: 50%;
-  width: 50px;
 }
 
 #team-carousel {
   width: 80%;
   margin: 0 auto;
-}
-
-@media (min-width: 600px) {
-  .team {
-    height: 740px;
-  }
-  .h3tag {
-    padding-top: 70px;
-    font-size: 3.5em;
-  }
-  .lineone {
-    margin-top: 10px;
-  }
-  .owl-carousel .owl-item img {
-    width: 120px !important;
-    height: 120px !important;
-  }
-  .ptag {
-    margin-top: 40px;
-    margin-bottom: 70px;
-    font-size: 1.2em;
-  }
 }
