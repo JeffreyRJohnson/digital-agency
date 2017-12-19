@@ -1,6 +1,7 @@
+// import $ from 'jquery';
 import 'jquery-validation';
 
-this.messageForm = $('#messageForm').validate({
+$('#messageForm').validate({
   rules: {
     name: 'required',
     email: {

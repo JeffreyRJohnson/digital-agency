@@ -26070,7 +26070,7 @@ var mixer = (0, _mixitup2.default)('.container');
 
 __webpack_require__(3);
 
-undefined.messageForm = $('#messageForm').validate({
+$('#messageForm').validate({
   rules: {
     name: 'required',
     email: {
@@ -26083,7 +26083,7 @@ undefined.messageForm = $('#messageForm').validate({
     form.submit();
     /* success event goes here  */
   }
-});
+}); // import $ from 'jquery';
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ })

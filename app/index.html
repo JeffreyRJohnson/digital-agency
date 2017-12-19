@@ -73,48 +73,61 @@
     </div>
   </section>
 
+
+
+
   <section id="about" class="about">
 
-    <h2 class="dark__header">
-      SOME WORDS
-      <span class="dark__header--bold">ABOUT US</span>
-    </h2>
-    <hr class="lineone">
-    <hr class="linetwo">
-
-    <img src="assets/images/our-team.jpeg" alt="employees of agency" class="about__image">
+    <div class="about__content-container">
 
 
-    <p class="about__paragraph"> We love building and rebuilding brands through our specific skills. Using colour, fonts, and illustration, we brand companies
-      in a way they will never forget.
-    </p>
+
+      <img src="assets/images/our-team.jpeg" alt="employees of agency" class="about__image">
+
+      <div class="about__link__container">
 
 
-    <a class="about__link">
-      <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-      <span class="about__link--bold"> Mission -</span>
-      <span class="about__link--italic"> We deliver uniqueness and quality</span>
-    </a>
-    <br>
 
-    <a class="about__link" href="#portfolio">
-      <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-      <span class="about__link--bold"> Skills -</span>
-      <span class="about__link--italic"> Delivering fast and excellent results </span>
-    </a>
-    <br>
+        <h2 class="dark__header about__header">
+          SOME WORDS
+          <span class="dark__header--bold">ABOUT US</span>
+        </h2>
+        <hr class="lineone">
+        <hr class="linetwo">
 
-    <a class="about__link" href="#clients">
-      <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-      <span class="about__link--bold"> Clients -</span>
-      <span class="about__link--italic">
-        Satisfied clients thanks to our experience</span>
-    </a>
-    <a href="#portfolio" class="about__browse-btn--link">
-      <button class="about__browse-btn">
-        <i class="fa fa-briefcase" aria-hidden="true"></i> Browse our work</button>
-    </a>
 
+
+        <p class="about__paragraph"> We love building and rebuilding brands through our specific skills. Using colour, fonts, and illustration, we brand
+          companies in a way they will never forget.
+        </p>
+
+
+        <a class="about__link">
+          <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+          <span class="about__link--bold"> Mission -</span>
+          <span class="about__link--italic"> We deliver uniqueness and quality</span>
+        </a>
+        <br>
+
+        <a class="about__link" href="#portfolio">
+          <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+          <span class="about__link--bold"> Skills -</span>
+          <span class="about__link--italic"> Delivering fast and excellent results </span>
+        </a>
+        <br>
+
+        <a class="about__link" href="#clients">
+          <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+          <span class="about__link--bold"> Clients -</span>
+          <span class="about__link--italic">
+            Satisfied clients thanks to our experience</span>
+        </a>
+        <a href="#portfolio" class="about__browse-btn--link">
+          <button class="about__browse-btn">
+            <i class="fa fa-briefcase" aria-hidden="true"></i> Browse our work</button>
+        </a>
+
+      </div>
     </div>
   </section>
 
@@ -264,23 +277,20 @@
       <div class="services__card">
         <i class="fa fa-mobile services__card__icon" aria-hidden="true"></i>
         <h4 class="services__card__heading">MOBILE APPS</h4>
-        <p class="services__card__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ea ex laborum, quisquam exercitationem, dolores,
-          excepturi dolore maxime ipsa explicabo ut ipsum modi eligendi earum numquam perferendis quis inventore commodi?</p>
+        <p class="services__card__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ea ex laborum, quisquam exercitationem.</p>
       </div>
 
       <div class="services__card">
         <i class="fa fa-camera services__card__icon" aria-hidden="true"></i>
         <h4 class="services__card__heading">PHOTOGRAPHY</h4>
-        <p class="services__card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora harum, quia eaque doloremque, excepturi error laudantium
-          ipsam eos placeat cumque dolorum dolore accusantium eveniet deleniti sint laboriosam corporis ullam sunt.
+        <p class="services__card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora harum, quia eaque doloremque, excepturi error laudantium.
         </p>
       </div>
 
       <div class="services__card">
         <i class="fa fa-bullhorn services__card__icon" aria-hidden="true"></i>
         <h4 class="services__card__heading">MARKETING</h4>
-        <p class="services__card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur nam nobis repellendus delectus hic fuga,
-          error, odio facilis consectetur ipsum voluptas. Ipsum doloremque mollitia error alias? Nostrum, cumque odio.</p>
+        <p class="services__card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur nam nobis repellendus delectus hic fuga.</p>
       </div>
     </div>
     <br>
@@ -332,11 +342,11 @@
 
       <div class="portfolio__filter__header">FILTER BY TYPE</div>
 
-      <div class="controls portfolio__filter__filter">
-        <span data-filter="all">All</span>|
-        <span data-filter=".web">Web Design</span>|
-        <span data-filter=".mobile">Mobile Design</span>|
-        <span data-filter=".photography">Photography</span>
+      <div class="controls">
+        <span data-filter="all" class="portfolio__filter__filter">All</span>|
+        <span data-filter=".web" class="portfolio__filter__filter">Web Design</span>|
+        <span data-filter=".mobile" class="portfolio__filter__filter">Mobile Design</span>|
+        <span data-filter=".photography" class="portfolio__filter__filter">Photography</span>
 
       </div>
 
@@ -443,6 +453,7 @@
 
 
       <form action="/" method="get" class="contact__form" name="messageForm" id="messageForm">
+
         <div class="contact__form__name-container">
           <label for="name" class="contact__form__label">Name</label>
           <br>

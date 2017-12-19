@@ -17,6 +17,9 @@
     @include atLarge {
       padding-left: 10%;
     }
+    @include atExtraLarge {
+      padding-left: 20%;
+    }
   }
   &__icon {
     border: 3px solid $grey;
@@ -41,6 +44,9 @@
       }
       @include atLarge {
         margin-right: 10%;
+      }
+      @include atExtraLarge {
+        margin-right: 20%;
       }
     }
   }

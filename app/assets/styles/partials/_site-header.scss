@@ -27,6 +27,9 @@
   @include atMedium {
     left: 60px;
   }
+  @include atLarge {
+    left: 10%;
+  }
 }
 
 .primary-nav__burger {

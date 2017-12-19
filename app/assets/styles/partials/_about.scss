@@ -1,11 +1,28 @@
 .about {
+  @include atSmall {
+    padding-top: 120px;
+  }
   @include atMedium {
-    margin: 40px;
+    padding-top: 20px;
+    margin: 0px 40px 0px 40px;
   }
   @include atLarge {
-    width: 38%;
-    float: right;
-    margin: 40px 10% 0 2%;
+    margin: 40px 10% 0px 10%;
+    padding-top: 0px;
+    flex-direction: row;
+  }
+  @include atExtraLarge {
+    margin: 60px 20% 80px 20%;
+  }
+  &__content-container {
+    @include atLarge {
+    }
+  }
+  &__header {
+    margin-top: 0px !important; //overriding dark-header & being lazy
+    @include atExtraLarge {
+      font-size: 2.6em !important;
+    }
   }
   &__image {
     margin-top: 30px;
@@ -15,9 +32,7 @@
     border-radius: 10px;
     @include atSmall {
       height: 300px;
-      margin-top: 180px;
-      padding-left: 40px;
-      padding-right: 40px;
+      margin-top: 80px;
     }
     @include atMedium {
       margin-top: 90px;
@@ -25,17 +40,26 @@
       margin-bottom: 40px;
     }
     @include atLarge {
-      width: 38%;
-      margin: 80px 2% 60px 10%;
-      height: 440px;
+      width: 50%;
+      margin-top: 40px;
+      float: left;
     }
   }
 
   &__paragraph {
     color: $darkgrey;
-    margin: 20px 0 20px 0;
+    margin: 20px auto 20px auto;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.4em;
+
+    text-align: center;
+    @include atLarge {
+      width: 95%;
+      line-height: 1.2;
+    }
+    @include atExtraLarge {
+      width: 100%;
+    }
   }
 
   &__browse-btn {
@@ -48,6 +72,9 @@
     display: block;
     font-size: 0.9em;
     text-align: left;
+    @include atLarge {
+      margin-left: 2em;
+    }
     &:hover {
       background-color: $orange;
     }
@@ -60,6 +87,21 @@
     color: $darkgrey;
     cursor: pointer;
     text-decoration: none;
+
+    @include atLarge {
+      padding-left: 2em;
+      line-height: 2;
+    }
+    &__container {
+      @include atLarge {
+        width: 50%;
+        margin-top: 40px;
+        float: left;
+      }
+      @include atExtraLarge {
+        padding-left: 70px;
+      }
+    }
 
     &--italic {
       font-style: italic;

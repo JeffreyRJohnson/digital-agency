@@ -6,13 +6,13 @@
   @include atSmall {
     height: 740px;
   }
-  @include atLarge {
-    margin-top: 60px;
-  }
   &__card {
     display: inline-block;
     color: white;
     text-align: center;
+    @include atExtraLarge {
+      width: 270px;
+    }
     &__image {
       border-radius: 50%;
       width: 50px;
@@ -35,7 +35,7 @@
       font-size: 1em;
       @include atSmall {
         margin-top: 20px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
         font-size: 1.2em;
       }
     }
@@ -44,5 +44,10 @@
 
 #team-carousel {
   width: 80%;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding-top: 0px;
+  @include atExtraLarge {
+    width: 60%;
+    margin: 0 20%;
+  }
 }
