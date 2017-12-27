@@ -42,12 +42,17 @@ a {
   color: #fff;
   font-size: 24px;
   font-weight: 600; }
+  .primary-nav__logo:hover {
+    color: #fcac45; }
   @media (min-width: 768px) {
     .primary-nav__logo {
       left: 60px; } }
   @media (min-width: 1010px) {
     .primary-nav__logo {
       left: 10%; } }
+  @media (min-width: 1400px) {
+    .primary-nav__logo {
+      left: 20%; } }
 
 .primary-nav__burger {
   position: absolute;
@@ -87,8 +92,12 @@ a {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      margin-left: 0;
-      width: 80%; } }
+      margin-left: 10%;
+      margin-right: 10%; } }
+  @media (min-width: 1400px) {
+    .primary-nav__row {
+      margin-left: 20%;
+      margin-right: 20%; } }
 
 .primary-nav__row--open {
   display: block;
@@ -154,6 +163,9 @@ a {
       .large-hero-image__title {
         font-size: 3.8em;
         top: 160px; } }
+    @media (min-width: 1010px) {
+      .large-hero-image__title {
+        margin-top: 200px; } }
     .large-hero-image__title--bright {
       color: #fcac45;
       font-weight: 700; }
@@ -203,7 +215,10 @@ a {
       margin-top: 60%; } }
   @media (min-width: 1010px) {
     .large-hero-image__icon {
-      margin-top: 30%; } }
+      margin-top: 40%; } }
+  @media (min-width: 1400px) {
+    .large-hero-image__icon {
+      margin-top: 20%; } }
 
 @media (min-width: 481px) {
   .about {
@@ -318,7 +333,7 @@ a {
   .contact__form {
     margin: 0 10%; } }
 
-@media (min-width: 1010px) {
+@media (min-width: 1400px) {
   .contact__form {
     margin: 0 20%; } }
 

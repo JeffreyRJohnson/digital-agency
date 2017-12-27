@@ -32,6 +32,9 @@
       font-size: 3.8em;
       top: 160px;
     }
+    @include atLarge {
+      margin-top: 200px;
+    }
     &--bright {
       color: $orange;
       font-weight: 700;
@@ -84,6 +87,9 @@
     margin-top: 60%;
   }
   @include atLarge {
-    margin-top: 30%;
+    margin-top: 40%;
+  }
+  @include atExtraLarge {
+    margin-top: 20%;
   }
 }

@@ -24,11 +24,17 @@
   color: #fff;
   font-size: 24px;
   font-weight: 600;
+  &:hover {
+    color: $orange;
+  }
   @include atMedium {
     left: 60px;
   }
   @include atLarge {
     left: 10%;
+  }
+  @include atExtraLarge {
+    left: 20%;
   }
 }
 
@@ -63,8 +69,12 @@
   }
   @include atLarge {
     justify-content: flex-end;
-    margin-left: 0;
-    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  @include atExtraLarge {
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
 
