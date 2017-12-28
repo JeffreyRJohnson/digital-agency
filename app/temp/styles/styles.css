@@ -596,7 +596,49 @@ section {
     .portfolio__filter__header {
       margin-left: 21%; } }
   .portfolio__album__thumb {
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 260px; }
+    .portfolio__album__thumb:hover .portfolio__album__image__overlay {
+      opacity: 1; }
+  .portfolio__album__image {
+    display: block;
+    width: 100%;
+    height: auto; }
+    .portfolio__album__image__overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+      background-color: black; }
+      .portfolio__album__image__overlay__text {
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        width: 100%; }
+        .portfolio__album__image__overlay__text--heading {
+          font-size: 1.2em;
+          color: white;
+          font-weight: 500; }
+        .portfolio__album__image__overlay__text--desc {
+          font-size: 1.1em;
+          color: #5a5a5a; }
+        .portfolio__album__image__overlay__text--icon {
+          color: #fcac45;
+          font-weight: 100;
+          font-size: 2em; }
   .portfolio__album__wrapper {
     max-width: 1100px;
     margin: 0 auto; }
@@ -636,6 +678,10 @@ section {
   @media (min-width: 1400px) {
     .controls {
       margin-right: 21%; } }
+
+.fa-rotate-45 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
 
 .clients {
   background-image: url(../../assets/images/city.jpeg);

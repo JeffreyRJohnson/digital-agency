@@ -24,6 +24,53 @@
   }
   &__album__thumb {
     display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 260px;
+    &:hover .portfolio__album__image__overlay {
+      opacity: 1;
+    }
+  }
+  &__album__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    &__overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: black;
+      &__text {
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        width: 100%;
+        &--heading {
+          font-size: 1.2em;
+          color: white;
+          font-weight: 500;
+        }
+        &--desc {
+          font-size: 1.1em;
+          color: $darkgrey;
+        }
+        &--icon {
+          color: $orange;
+          font-weight: 100;
+          font-size: 2em;
+        }
+      }
+    }
   }
   &__album__wrapper {
     max-width: 1100px;
@@ -69,4 +116,12 @@
   @include atExtraLarge {
     margin-right: 21%;
   }
+}
+
+.fa-rotate-45 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

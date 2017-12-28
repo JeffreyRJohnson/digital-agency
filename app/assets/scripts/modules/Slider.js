@@ -8,7 +8,7 @@ $(document).ready(function() {
     margin: 10,
     responsiveClass: true,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsive: {
       0: {
@@ -50,7 +50,7 @@ $(document).ready(function() {
     margin: 14,
     responsiveClass: true,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsive: {
       0: {
